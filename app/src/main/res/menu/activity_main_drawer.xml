@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search_green"
+            android:title="검색" />
+        <item
+            android:id="@+id/navi"
+            android:icon="@drawable/navi_green2"
+            android:title="길찾기" />
+        <item
+            android:id="@+id/favorite"
+            android:icon="@drawable/favor_green"
+            android:title="즐겨찾기" />
+    </group>
+
+
+    <Item android:title="근처 찾기">
+
+        <menu>
+
+            <item
+                android:id="@+id/police_station"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="근처 경찰서" />
+
+            <item
+                android:id="@+id/fire_station"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="근처 소방서" />
+
+        </menu>
+    </Item>
+
+</menu>

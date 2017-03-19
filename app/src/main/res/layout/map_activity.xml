@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.naryunglee.testsk.MapActivity">
+
+        <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Toolbar"
+                    android:layout_weight="0.28">
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="85dp"
+                            android:gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize = "80px"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:text="안심지도" />
+
+                        <ImageView
+                            android:layout_marginLeft="110dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src = "@drawable/back"
+                            android:id="@+id/backimg" />
+
+
+                </android.support.v7.widget.Toolbar>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/search_p"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="11"
+                            android:layout_margin = "5dp"
+                            android:hint="입력하세요"/>
+
+                        <Button
+                            android:id="@+id/search_button"
+                            android:layout_width="72dp"
+                            android:layout_height="wrap_content"
+                            android:text="검색"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navi_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/time_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/map_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:orientation="vertical">
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/current_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/current_on"
+                            app:backgroundTint="@android:color/white" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/compass_button"
+                            android:layout_gravity="top|left"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/compass"
+                            app:backgroundTint="@android:color/white" />
+
+                        <LinearLayout
+                            android:layout_gravity="top"
+                            android:layout_width="363dp"
+                            android:layout_height="match_parent">
+
+                        </LinearLayout>
+
+                </FrameLayout>
+
+        </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.naryunglee.testsk">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/footprint"
+        android:label="뚜벅뚜벅"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ddbActivity" android:label="ddbActivity"></activity>
+        <activity android:name=".menuActivity" android:label="menuActivity"></activity>
+        <activity android:name=".nonmemberActivity" android:label="nonmemberActivity"></activity>
+        <activity android:name=".emergencyphoneActivity" android:label="emergencyphoneActivity"></activity>
+        <activity android:name=".inquiryActivity" android:label="inquiryActivity"></activity>
+        <activity android:name=".MapActivity" android:label="MapActivity"></activity>
+        <activity android:name=".naviActivity" android:label="naviActivity"></activity>
+        <activity android:name=".ModifyMsg" android:label="ModifyMsg"></activity>
+
+        <!-- 네이버 아이디로 로그인에서 사용하는 액티비티를 등록 -->
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"/>
+        <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app"/>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"></uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+</manifest>

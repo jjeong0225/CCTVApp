@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton6"
+            android:src="@drawable/menu2"
+            android:background="#9fc93c"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="뚜벅뚜벅"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:background="#9fc93c"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="  계정 설정"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:background="#eaf0d9"
+                android:gravity="center_vertical"
+                android:id="@+id/textView12"
+                android:layout_weight="0.08" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    프로필 수정"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/button"
+                android:background="#ffffff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    긴급 연락처 수정"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/button1"
+                android:background="#ffffff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    로그아웃"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/logoutbutton2"
+                android:background="#ffffff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    서비스 탈퇴"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/button3"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="  알림 설정"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:background="#eaf0d9"
+                android:gravity="center_vertical"
+                android:id="@+id/textView13"
+                android:layout_weight="0.08" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    전원 버튼 SOS 소리"
+                android:textSize="15dp"
+                android:id="@+id/switch1"
+                android:layout_gravity="right"
+                android:background="#ffffff"/>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    녹음 기능"
+                android:textSize="15dp"
+                android:id="@+id/switch2"
+                android:layout_gravity="right"
+                android:background="#ffffff"/>
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    영상 촬영"
+                android:textSize="15dp"
+                android:id="@+id/switch3"
+                android:layout_gravity="right"
+                android:background="#ffffff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    SOS 메시지 설정"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/button4"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="  고객지원"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:background="#eaf0d9"
+                android:gravity="center_vertical"
+                android:id="@+id/textView14"
+                android:layout_weight="0.08" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    이용 안내"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/button5"
+                android:background="#ffffff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    버전 정보"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/button6"
+                android:background="#ffffff"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="    문의하기"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:id="@+id/button7"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

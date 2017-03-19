@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.naryunglee.testsk.MapActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Toolbar"
+            android:layout_weight="0.28">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="85dp"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize = "80px"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="안심지도" />
+
+            <ImageView
+                android:layout_marginLeft="110dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src = "@drawable/back"
+                android:id="@+id/backimg" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:src="@drawable/blue_flag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/start_edit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="출발지"
+                android:layout_weight="16.20" />
+
+
+            <ImageButton
+                android:id="@+id/start_button"
+                android:src="@drawable/places_ic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/red_flag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/end_edit"
+                android:hint="도착지"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageButton
+                android:id="@+id/end_button"
+                android:src="@drawable/places_ic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/navi_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="길찾기"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.71"
+            android:layout_height="400dp">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/compass_button"
+                    android:layout_gravity="left"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/compass"
+                    app:backgroundTint="@android:color/white" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/current_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/current_on"
+                    app:backgroundTint="@android:color/white" />
+
+            <LinearLayout
+                android:layout_gravity="top"
+                android:layout_width="363dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/cctv_button"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="CCTV 보기"/>
+
+            <Button
+                android:id="@+id/jwalk_button"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="보행자 사고 보기"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
